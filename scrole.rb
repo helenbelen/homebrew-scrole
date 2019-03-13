@@ -8,8 +8,8 @@ class Scrole < Formula
   version "1.0"
 
   def install
-    libexec.install Dir["scroll_script/*"]
-    libexec.install "process_script.py" => "scrole"
+    libexec.install Dir["*"]
+    libexec.install "scroll_script/process_script.py" => "scrole"
     bin.write_exec_script (libexec/"scrole")
   end
 
