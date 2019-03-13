@@ -6,7 +6,7 @@ class Scrole < Formula
   url "https://git.target.com/HelenAgha/scrole-project.git", :using => :git
   sha256 "3f85c78341ce3dfca491c4a94941d428d8d50a63f57c896208cc1311641bf794"
   version "1.0"
-  depends_on "python@2"
+  
 
   def install
     libexec.install "scroll-script/process_script.py" => "scroll"
